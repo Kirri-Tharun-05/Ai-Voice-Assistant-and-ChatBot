@@ -1,0 +1,244 @@
+#ovel{
+    background-color: black;
+    height: 100vh;
+}
+body{    
+    background-color: black;
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
+
+.square{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.square span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#6b72ff00 50%,#00c3ff3b 40%);
+    box-shadow: 0 0 50px rgb(0, 195, 255), inset 0 0 50px rgb(0,195,225);
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate1 8s linear infinite;
+}
+
+.square span:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#6b72ff00 50%,#00c3ff3b 40%);
+    box-shadow: 0 0 50px rgb(0, 195, 255), inset 0 0 50px rgb(0,195,225);
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate2 6s linear infinite;
+}
+
+.square span:nth-child(3){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#6b72ff00 50%,#00c3ff3b 40%);
+    box-shadow: 0 0 50px rgb(0, 195, 255), inset 0 0 50px rgb(0,195,225);
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate3 8s linear infinite;
+}
+
+@keyframes animate1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+    
+}
+@keyframes animate2 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+    
+}
+@keyframes animate3 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+    
+}
+
+.textInput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textInput input{
+    background: transparent;
+    outline: none;
+    border: transparent;
+    width: 25rem;
+    padding-left:2rem ;
+    height: 2rem;
+    color: white;
+}
+.textInput button
+{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color:transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.textInput{
+    outline: none;
+    border: 2px solid #333;   
+    padding: 0.5rem;
+    display: inline-block; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff, 0 0 30px #ff00ff; 
+    animation: colorfulGlow 3s infinite alternate;
+}
+
+.textInput button:hover{
+
+    animation: colorfulGlow 3s infinite alternate;
+}
+.textInput button:active{
+    animation: glowingEffect 1s forwards;
+}
+@keyframes glowingEffect {
+    0% {
+        box-shadow: 0 0 5px rgb(255, 0, 255), 0 0 10px rgb(0, 255, 255), 0 0 15px rgb(255, 0, 255);
+        background-color: #333;
+    }
+    50% {
+        box-shadow: 0 0 20px rgb(255, 0, 255), 0 0 30px rgb(0, 255, 255), 0 0 40px rgb(255, 0, 255);
+        background-color: #444;
+    }
+    100% {
+        box-shadow: 0 0 25px rgb(255, 0, 255), 0 0 50px rgb(0, 255, 255), 0 0 75px rgb(255, 0, 255);
+        background-color: #555;  /* Optional: Change background on click */
+    }
+}
+@keyframes colorfulGlow {
+    0% {
+        box-shadow: 0 0 5px #ff00ff, 0 0 10px #00ffff, 0 0 15px #ff00ff;
+    }
+    25% {
+        box-shadow: 0 0 5px #00ff00, 0 0 10px #ff00ff, 0 0 15px #00ff00;
+    }
+    50% {
+        box-shadow: 0 0 5px #00ffff, 0 0 10px #ff00ff, 0 0 15px #00ffff;
+    }
+    75% {
+        box-shadow: 0 0 5px #ff00ff, 0 0 10px #00ff00, 0 0 15px #ff00ff;
+    }
+    100% {
+        box-shadow: 0 0 5px #00ffff, 0 0 10px #ff00ff, 0 0 15px #00ffff;
+    }
+}
+
+.textInput input::placeholder{
+        font-family: 'Arial', sans-serif;  /* Change font family */
+        font-size: 16px;                   /* Change font size */
+        color: #888;                       /* Change font color */
+        font-style: italic;                /* Optional: make it italic */
+}
+
+.textInput input{
+    font-family: "Oxanium", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;                
+}
+
+.textInput{
+margin-top:2rem;
+}
+
+#siri-Wave{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+
+#siri-Wave{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.receiver_message{
+    display: inline-block;
+    padding: 8px;
+    border:2px solid cyan;
+    border-radius:0px 15px 15px 20px;
+    width: auto;
+    color: white;
+    background-color: #0dcaf014;
+    max-width: 85%; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal;
+}
+
+.tha{
+    text-align: right;
+}
+.sender_message{
+    padding:8px;
+    border:2px solid cyan;
+    border-radius: 15px 15px 0px 20px;
+    color: cyan;
+    background-color:rgb(27, 109, 134);
+    display: inline-block; 
+    text-align: right;
+    max-width: 85%; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal;
+    margin-left: auto;
+}
+
+.width-size{
+    max-width:80%;
+    width:auto;
+}
+
+.sender_message{
+    font-family: "Oxanium", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal; 
+}
+
+.receiver_message{
+    font-family: "Oxanium", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal; 
+}
